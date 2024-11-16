@@ -1,0 +1,2 @@
+"# connect4"  initgit add README.mdgit commit -m "fix last dock" git branch -M maingit remote add origin https://github.com/Vatsal596/connect4.gitgit push -u origin main
+"# connect4"  initgit add README.mdgit commit -m "fix last dock" git branch -M maingit remote add origin https://github.com/Vatsal596/connect4.git git push -u origin main
