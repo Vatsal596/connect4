@@ -1,68 +1,51 @@
-# ZkNoid X Guess Who
+# Connect4 X ZkNoid
 
-"Guess Who" is a two-player game where each player tries to guess the identity of the other player's hidden character by asking a series of yes or no questions. By integrating with ZKnoid, the game would offer fast, gasless transactions and secure gameplay where each player's moves are verified without exposing their strategy by creating runtime modules for the game logic.
+"Connect4" is a classic two-player strategy game where players take turns dropping colored discs into a vertical grid. The goal is to connect four of your discs in a row — horizontally, vertically, or diagonally — before your opponent does. By integrating with ZkNoid, this version of Connect4 ensures secure, provable gameplay with gasless transactions, all powered by the Mina Protocol.
 
+This project was built during the EthBangkok Hackathon to demonstrate the power of ZK (Zero-Knowledge) technology in enhancing trust, transparency, and seamless gaming experiences.
 
+## What is ZkNoid?
 
-ZkNoid is a home for ZK games platform on [Mina protocol](https://minaprotocol.com/).
+ZkNoid is a gaming platform for ZK games built on the [Mina Protocol](https://minaprotocol.com/). It provides a modular framework for developers to create and deploy provable games with secure gameplay and efficient transaction processes.
 
-🚀 Founded on hackathon in Istanbul with the idea to unify gaming ecosystem in Mina, this project has won the grand prize in Mina Navigators and conducted a testnet event!
+🚀 Highlights:
+- Founded during a hackathon in Istanbul, ZkNoid has unified the gaming ecosystem on Mina Protocol.
+- Grand prize winner in the Mina Navigators Program and hosted a successful testnet event.
+- A gaming store for provable games with infrastructure for developers to deploy games seamlessly.
 
-ZkNoid is a gaming store for provable games. Modular framework is provided for developers bringing all the infrastructure they need to easily deploy games on Mina Protocol. After Zk Proofs integration to the game process, game is listed on the store becoming a part of the project ecosystem
-
-Learn more about ZkNoid on [zknoid.io](https://www.zknoid.io/)
+Learn more about ZkNoid:
+- [Website](https://www.zknoid.io/)
 - [Games Store](https://app.zknoid.io/)
-- [Docs](https://docs.zknoid.io/)
+- [Documentation](https://docs.zknoid.io/)
 - [Blog](https://zknoid.medium.com/)
 
-### Get started
+---
 
-If you want to create your own provable game, please check out the [hacker's guide](https://zknoid.medium.com/building-a-simple-zknoid-game-from-scratch-hackers-guide-0898bf30fdfb)
+## Get Started
 
-### Repository
+If you'd like to create your own provable game, explore the [Hacker's Guide](https://zknoid.medium.com/building-a-simple-zknoid-game-from-scratch-hackers-guide-0898bf30fdfb).
 
-Repository contains ZkNoid game platform monorepo. 
-Monorepo 
+## Repository Overview
 
-### Deployments
-- Develop branch in deployed to https://dev.zknoid.io/
-- Main branch in deployed to https://app.zknoid.io/
+This repository contains the code for Connect4, including game logic, ZK integration, and frontend and backend components. Built using ZkNoid's modular framework, this project leverages ZK proofs to ensure fair gameplay without exposing strategies.
 
-### Setup
-Project can be used localy. Here are the commands for set-up
+---
+
+## Setup
+
+To run the project locally, follow these steps:
 
 ```bash
-git clone https://github.com/ZkNoid/zknoid
-cd zknoid
- 
-# ensures you have the right node js version
-# !important! Without this step the app may not work!
-# If nvm is not installed please install it. 
-# `nvm install` may be needed to install correct node version
+# Clone the repository
+git clone https://github.com/YourGithubUsername/connect4
+cd connect4
+
+# Ensure you are using the correct Node.js version
+# If you don't have nvm installed, install it first
 nvm use
 
+# Install dependencies
 pnpm install
 
+# Start the development environment
 pnpm env:inmemory dev
-```
-
-### Implementing your own game
-ZkNoid is a modular platform that makes it easy to implement you own game using platform infrastructure. 
-To build a game you need to create a game folder inside [apps/web/games](https://github.com/ZkNoid/zknoid/tree/develop/apps/web/games).
-Define game config and implement front-end and contracts part in [packages/chain/src/](https://github.com/ZkNoid/zknoid/blob/develop/packages/chain/src/)
-
-- Read more in [hacker's guide](https://zknoid.medium.com/building-a-simple-zknoid-game-from-scratch-hackers-guide-0898bf30fdfb)
-- Learn more about SDK [here](https://docs.zknoid.io/docs/sdk)
-- Learn more about your game implementation [here](https://docs.zknoid.io/docs/game_building)
-
-
-### Interesting places
-- Arkanoid game verification – [arkanoid/GameContexts.ts](https://github.com/ZkNoid/zknoid/blob/develop/packages/chain/src/arkanoid/GameContext.ts)
-- Competitions and leaderboard system [engine/GameHub.ts](https://github.com/ZkNoid/zknoid/blob/develop/packages/chain/src/engine/GameHub.ts)
-- Matchmaking system – [engine/MatchMaker.ts](https://github.com/ZkNoid/zknoid/blob/develop/packages/chain/src/engine/MatchMaker.ts)
-- Randzu logic implementation – [randzu/RandzuLogic.ts](https://github.com/ZkNoid/zknoid/blob/develop/packages/chain/src/randzu/RandzuLogic.ts)
-- Games frontend implementation [apps/web/games](https://github.com/ZkNoid/zknoid/tree/develop/apps/web/games)
-- Games contracts implementation [packages/chain/src/](https://github.com/ZkNoid/zknoid/blob/develop/packages/chain/src/)
-
-"# connect4" 
-"# connect4" 
