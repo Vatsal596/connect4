@@ -37,7 +37,7 @@ To run the project locally, follow these steps:
 
 ```bash
 # Clone the repository
-git clone https://github.com/YourGithubUsername/connect4
+git clone https://github.com/Vatsal596/connect4
 cd connect4
 
 # Ensure you are using the correct Node.js version
